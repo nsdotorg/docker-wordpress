@@ -8,5 +8,8 @@
 ### Steps to perform a query
 1. Run `brew install mysql`
 2. Run `brew services start mysql`
-3. You can perform a query using the following command
-  - `docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show databases'`
+3. Query the db instance running in the container using the following command
+```shell
+# replace "show databases" with any query
+docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show databases'
+```
