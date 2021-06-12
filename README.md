@@ -16,3 +16,8 @@ docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show data
 # club queries together to get the data you need
 docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show databases; use wordpress; SHOW TABLES'
 ```
+4. Run `docker exec -it <mysql_container_name> mysql -u<username> -p<password>` to run queries inside the db instance
+```mysql
+# example command to run inside db mysql instance
+use wordpress; SHOW TABLES; SELECT * FROM wp_options;
+```
