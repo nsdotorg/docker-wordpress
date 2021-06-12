@@ -18,6 +18,8 @@ docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show data
 ```
 4. Run `docker exec -it <mysql_container_name> mysql -u<username> -p<password>` to run queries inside the db instance
 ```mysql
-# example command to run inside db mysql instance
-use wordpress; SHOW TABLES; SELECT * FROM wp_options;
+# example commands to run inside db mysql instance (always add ';' at then end of each command
+mysql> use wordpress;
+mysql> SHOW TABLES;
+mysql> SELECT * FROM wp_options;
 ```
