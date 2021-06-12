@@ -12,4 +12,7 @@
 ```shell
 # replace "show databases" with any query
 docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show databases'
+
+# club queries together to get the data you need
+docker exec <mysql_container_name> mysql -u<username> -p<password> -e 'show databases;use wordpress; SHOW TABLES'
 ```
