@@ -23,3 +23,13 @@ mysql> use wordpress;
 mysql> SHOW TABLES;
 mysql> SELECT * FROM wp_options;
 ```
+5. Start/Stop containers as and when required
+```shell
+# when only wordpress and mysql containers are running
+docker container start $(docker container ls -aq)
+docker container stop $(docker container ls -aq)
+
+# when other containers are also running
+docker container start <wordpress_container_name> <mysql_container_name>
+docker container stop <wordpress_container_name> <mysql_container_name>
+```
