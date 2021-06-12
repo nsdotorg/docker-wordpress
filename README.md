@@ -5,7 +5,7 @@
 2. Run `docker-compose up -d`
 3. Open `http://localhost:8000`
 
-### Steps to check mysql tables
+### Steps to perform a query
 1. Run `docker inspect <mysql_container_name>`
 2. Run `brew install mysql`
 3. Run `brew services start mysql`
